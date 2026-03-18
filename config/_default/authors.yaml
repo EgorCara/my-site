@@ -1,0 +1,15 @@
+authors:
+  egor-cara:
+    name: "Egor Cara"
+    role: "Student"
+    bio: "Студент, изучаю операционные системы, веб‑разработку и современные инструменты DevOps."
+    avatar: "avatar.jpg"
+    interests:
+      - Операционные системы
+      - Веб‑разработка
+      - DevOps
+      - Git и CI/CD
+    education:
+      - course: "Операционные системы"
+        institution: "RUDN"
+        year: 2026
