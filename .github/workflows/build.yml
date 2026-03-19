@@ -107,8 +107,7 @@ jobs:
     - uses: actions/cache@v4
       with:
         path: resources/
-        key: ${{ runner.os }}-hugo-resources-fix-${{ hashFiles('assets/**/*', 'config/**/*',
-          'hugo.yaml', 'package.json') }}
+        key: ${{ runner.os }}-hugo-resources-fix-${{ hashFiles('assets/**/*', 'config/**/*', 'hugo.yaml', 'package.json') }}
         restore-keys: |
           ${{ runner.os }}-hugo-resources-
 
