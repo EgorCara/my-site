@@ -66,22 +66,22 @@ jobs:
 
   # Deploy website to GitHub Pages hosting (only if configured)
   deploy:
-  needs: [config, build]
-  if: needs.config.outputs.deploy-host == 'github-pages'
-  permissions:
-    pages: write
-    id-token: write
-  environment:
-    name: github-pages
-    url: ${{ steps.deployment.outputs.page_url }}
-  runs-on: ubuntu-latest
-  steps:
-    - name: Download artifact
-      uses: actions/download-pages-artifact@v4
-      with:
-        path: ./public
+    needs: [config, build]
+    if: needs.config.outputs.deploy-host == 'github-pages'
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Download artifact
+        uses: actions/download-pages-artifact@v4
+        with:
+          path: ./public
 
-    - name: Deploy to GitHub Pages
-      id: deployment
-      uses: actions/deploy-pages@v4
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
 
