@@ -31,7 +31,5 @@ mounts:
     target: content
   - source: static
     target: static
-  - source: config
-    target: config
   - source: data
     target: data
