@@ -69,6 +69,7 @@ hugoblox:
   # Spacing and shape tokens
   # ────────────────────────────────────────────────────────────────────────────
   layout:
+    path: "img/avatar.jpg"
     # Border radius: 'none', 'sm', 'md', 'lg', or 'full'
     radius: "md"
     # Spacing density: 'compact', 'comfortable', or 'spacious'
@@ -292,3 +293,8 @@ hugoblox:
 
   author:
     name: "Egor Cara"
+  
+  profile:
+    enabled: true
+    author: admin
+
